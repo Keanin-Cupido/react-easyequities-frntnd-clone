@@ -1,5 +1,7 @@
 import React from 'react';
 import EasyEquitiesLogo from '../assets/easyequities-logo.png';
+import { NavbarData } from './NavbarData';
+import CustomNavLink from './CustomNavLink';
 
 const Navbar = () => {
   return (
@@ -19,20 +21,14 @@ const Navbar = () => {
                 <li>About</li>
                 <li>Support</li>
 
-                {/* 
-                    const getStarted = [
-                        {
-                            link__name: 'New To Investing',
-                            link__url: '/newToInvesting'
-                        },
-                        . 
-                        .
-                        .
-                    ]
-                    <Navlink name="Get Started" dropdown={true} dropdownOptions={getStarted}>
-                        // svg
-                    </Navlink>
-                */}
+                {
+                    NavbarData.map((link, id) => {
+                        return (
+                            <CustomNavLink id={id} name={link.link__name} link={link.link__url} dropdown={link.dropdown} dropdownOptions={link.dropdownOptions}>
+                            </CustomNavLink>
+                        )
+                    })
+                }
             </ul>
         </div>
 
