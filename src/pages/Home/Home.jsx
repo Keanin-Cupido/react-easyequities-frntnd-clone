@@ -5,7 +5,7 @@ import Navbar from '../../components/Navbar';
 function Home() {
     DocumentTitle('EasyEquities Clone - Home');
     return (
-        <header>
+        <header className='w-full'>
             <Navbar />
         </header>
     )
