@@ -9,4 +9,4 @@ const CustomNavLink = (id, name, link, dropdown, dropdownOptions) => {
   )
 }
 
-export default CustomNavLink
+export default CustomNavLink;
