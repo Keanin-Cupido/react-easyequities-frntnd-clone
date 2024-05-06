@@ -1,10 +1,14 @@
-import React, { Children } from 'react'
+import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-const CustomNavLink = (id, name, link, dropdown, dropdownOptions) => {
+const CustomNavLink = ({id, name, link, dropdown, dropdownOptions, icon}) => {
   return (
-    <NavLink to={link}>
-        {Children}
+    <NavLink to={link} >
+        {
+          icon ? 'icon' : null
+        }
+        {name || ''}
+        {dropdown ? '>' : null}
     </NavLink>
   )
 }

@@ -12,6 +12,7 @@ export const NavbarData = [
                 link__name: 'option2',
                 link__url: '/option2'
             }
-        ]
+        ],
+        link__menuicon: true,
     },
 ]

@@ -1,12 +1,11 @@
 import React from 'react';
 import DocumentTitle from '../../components/DocumentTitle';
-import Navbar from '../../components/Navbar/Navbar';
 
 function Home() {
     DocumentTitle('EasyEquities Clone - Home');
     return (
         <header className='w-full'>
-            <Navbar />
+            <h1 className='font-bold opacity-45'>Home Page</h1>
         </header>
     )
 }
