@@ -1,14 +1,15 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import './CustomNavLink.css';
 
 const CustomNavLink = ({id, name, link, dropdown, dropdownOptions, icon}) => {
   return (
-    <NavLink to={link} >
+    <NavLink to={link}>
         {
           icon ? 'icon' : null
         }
         {name || ''}
-        {dropdown ? '>' : null}
+        {dropdown ? <span className='dropdown__icon'></span> : null}
     </NavLink>
   )
 }
