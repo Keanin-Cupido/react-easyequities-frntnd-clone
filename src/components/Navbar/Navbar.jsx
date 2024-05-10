@@ -2,6 +2,7 @@ import React from 'react';
 import EasyEquitiesLogo from '../../assets/easyequities-logo.png';
 import { NavbarData } from './NavbarData';
 import CustomNavLink from './CustomNavLink';
+import Button from '../Button/Button';
 
 const Navbar = () => {
   return (
@@ -27,9 +28,8 @@ const Navbar = () => {
 
             {/* Navbar Buttons */}
             <div className="">
-                    {/* 
-                        <Button name="Login" link='/login' />
-                    */}
+                <Button name="Login" link='/login' primary />
+                <Button name="Register" link='/register' />
             </div>
         </nav>
     </>

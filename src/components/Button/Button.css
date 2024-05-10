@@ -1,0 +1,29 @@
+.btn {
+    box-sizing: border-box;
+    min-width: 115px;
+    padding: 8px 20px;
+    font-size: 1rem;
+    border: 1.25px solid;
+    border-radius: 5px;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+.btn--primary {
+    border-color: #86888B;
+    background: transparent;
+    color: #86888B;
+}
+.btn--primary:hover {
+    border-color: #E62E45;
+    color: #E62E45;
+}
+.btn--secondary {
+    border: 0;
+    background-color: #E62E45;
+    color: white;
+}
+.btn--secondary:hover {
+    border: 1.25px solid #E62E45;
+    background: transparent;
+    color: #E62E45
+}

@@ -6,7 +6,7 @@ const CustomNavLink = ({id, name, link, dropdown, dropdownOptions, icon}) => {
   return (
     <NavLink to={link}>
         {
-          icon ? 'icon' : null
+          icon ? '' : null
         }
         {name || ''}
         {dropdown ? <span className='dropdown__icon'></span> : null}
