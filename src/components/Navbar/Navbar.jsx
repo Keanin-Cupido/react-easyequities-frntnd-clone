@@ -6,16 +6,16 @@ import Button from '../Button/Button';
 
 const Navbar = () => {
   return (
-    <>
-        <nav className='m-auto max-w-["1340px"] pt-["1em"] pb-["1em"] pl-["20px"] pr-["20px"]'>
+    <div className="w-full shadow-md">
+        <nav className='m-auto max-w-[1340px] pt-[1.15em] pb-[1.15em] pl-[20px] pr-[20px] flex items-center justify-between'>
             {/* Navbar logo */}
             <div className="">
                 <img src={EasyEquitiesLogo} alt="easyequities-logo" className='w-52 max-w-["unset"] h-auto align-middle' />
             </div>
 
             {/* Navbar Links */}
-            <div className="">
-                <ul>
+            <div className="w-full">
+                <ul className="w-full flex items-center justify-center gap-6 text-[#4a4a4a]">
                     {
                         NavbarData.map((link, id) => {
                             return (
@@ -27,12 +27,12 @@ const Navbar = () => {
             </div>
 
             {/* Navbar Buttons */}
-            <div className="">
+            <div className="flex items-center justify-center gap-2">
                 <Button name="Login" link='/login' primary />
                 <Button name="Register" link='/register' />
             </div>
         </nav>
-    </>
+    </div>
   )
 }
 

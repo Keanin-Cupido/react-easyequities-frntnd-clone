@@ -1,10 +1,10 @@
 .btn {
     box-sizing: border-box;
     min-width: 115px;
-    padding: 8px 20px;
-    font-size: 1rem;
+    padding: 6px 20px;
+    font-size: 0.925rem;
     border: 1.25px solid;
-    border-radius: 5px;
+    border-radius: 7px;
     font-family: inherit;
     transition: all 0.3s ease;
 }
@@ -18,7 +18,7 @@
     color: #E62E45;
 }
 .btn--secondary {
-    border: 0;
+    border: 1.25px solid #E62E45;
     background-color: #E62E45;
     color: white;
 }

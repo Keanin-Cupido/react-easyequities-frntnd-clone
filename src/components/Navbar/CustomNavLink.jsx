@@ -4,7 +4,7 @@ import './CustomNavLink.css';
 
 const CustomNavLink = ({id, name, link, dropdown, dropdownOptions, icon}) => {
   return (
-    <NavLink to={link}>
+    <NavLink to={link} className="text-[0.925rem]">
         {
           icon ? '' : null
         }
